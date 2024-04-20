@@ -7,13 +7,16 @@ export default {
   theme: {
     extend: {
       spacing: {
-        '500': '500px',
-        '555': '5rem'
+        '500': '500px'
       },
       maxWidth: {
         '1200': '1200px',
+        '750': '750px'
       }
     },
+    colors: {
+      'sliderbutton': '#0a0a0a87'
+    }
   },
   plugins: [],
 }
