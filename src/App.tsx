@@ -12,9 +12,9 @@ import ImageSliderFirst from "./components/ImageSliderFirst"
 function App() {
 
   return (
-    <>
+    <main className="mt-3 max-w-1200 w-full h-500 flex justify-center items-center">
       <ImageSliderFirst imageUrls={IMAGES} />
-    </>
+    </main>
   )
 }
 
