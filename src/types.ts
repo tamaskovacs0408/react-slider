@@ -1,3 +1,6 @@
 export type ImageSliderProps = {
-    imageUrls: string[]
+    imageUrls: {
+        url: string,
+        alt: string
+    }[]
 }
