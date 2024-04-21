@@ -1,0 +1,9 @@
+.sldrbtn:hover > * {
+    animation: squish 0.3s ease-in-out;
+}
+
+@keyframes squish {
+    50% {
+        transform: scale(1.4, 0.6);
+    }
+}
