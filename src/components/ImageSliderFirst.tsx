@@ -13,7 +13,7 @@ function ImageSliderFirst({ imageUrls }: ImageSliderProps) {
     })
   }
 
-  function handlePreviusImage() {
+  function handlePreviousImage() {
     setImageIndex(index => {
       if (index === 0) return imageUrls.length - 1;
       return index - 1
@@ -23,7 +23,7 @@ function ImageSliderFirst({ imageUrls }: ImageSliderProps) {
   return (
     <div className="flex flex-col justify-center items-center w-full h-full relative">
       <img src={imageUrls[imageIndex]} className="object-cover w-full h-full max-w-750 transition-opacity duration-500 ease-in-out" />
-      <button className="bg-white absolute first-line:absolute block top-2/5 left-0 p-0 h-full rounded-none hover:bg-sliderbutton transition-all" onClick={handlePreviusImage}>
+      <button className="bg-white absolute first-line:absolute block top-2/5 left-0 p-0 h-full rounded-none hover:bg-sliderbutton transition-all" onClick={handlePreviousImage}>
           <ArrowBigLeft className="w-8" viewBox="0 0 20 20"/>
         </button>
         <button className="bg-white absolute block top-2/5 right-0 p-0 h-full rounded-none hover:bg-sliderbutton transition-all" onClick={handleNextImage}>
